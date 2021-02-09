@@ -13,6 +13,7 @@ body{
 
 #btnInicio{
     text-align: center;
+    text-decoration: none;
 }
 
 header{
@@ -51,4 +52,87 @@ footer {
     
     width: 47vw;
     height: 14vh;
+}
+
+#btnPlanos{
+    background-color: #22a4bd;
+}
+#btnPlanos:hover {
+    
+    background-color: #0dcaf0;;
+    
+  }
+
+  #btnCalcular {
+      width: 90px;
+      height: 40px;
+  }
+
+  #btnCalcular_pliego{
+      width: 90px;
+      height: 40px;
+  }
+
+  #btnCalcular_medioPliego{
+      width: 90px;
+      height: 40px;
+  }
+
+  #btnCalcular_cuarto{
+      width: 90px;
+      height: 40px;
+  }
+
+  #btnCalcular_carta{
+      width: 90px;
+      height: 40px;
+  }
+
+  #btnCalcular_area{
+    width: 90px;
+    height: 40px;
+}
+
+#btnCalcular_detalle{
+    width: 90px;
+    height: 40px;
+}
+
+#btn-subtotal{
+    /*width: 90px;*/
+    height: 40px;
+    
+}
+
+#subtotalPlanos{
+    padding-bottom: 70px;
+}
+
+#btnCalcular_levantamiento{
+    width: 90px;
+    height: 40px;
+}
+#btnCalcular_interior{
+    width: 90px;
+    height: 40px;
+}
+
+#btnCalcular_exterior{
+    width: 90px;
+    height: 40px;
+}
+
+#btnCalcular_extras{
+    width: 90px;
+    height: 40px;
+}
+
+#btnCalcular_cambios{
+    width: 90px;
+    height: 40px;
+}
+
+#btn-subtotalRender{
+   
+    height: 40px;
 }
