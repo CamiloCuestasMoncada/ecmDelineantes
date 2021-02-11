@@ -164,5 +164,11 @@ footer {
     }
 }
 
+@media(max-width: 576px) {
+    .resultadosCheck {
+        display: block;
+        color: rgb(243, 249, 175);
+    }
+}
 
 
