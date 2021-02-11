@@ -1,95 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>ecm-delineantes/render</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    
+
     <link rel="stylesheet" href="../../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!--<script src='main.js'></script>-->
+    <link rel="icon" href="../../img/favIcon.png" type="image/png" />
 </head>
 
 <body>
-    
+
     <header class="container-fluid shadow">
         <div class="row justify-content-center align-items-center text-center">
-            <a href="../../index.html" class="col-4  text-align-center" id="btnInicio">
+            <a href="../../index.html" class="col-md-4  text-align-center mt-4" id="btnInicio">
                 <img src="../../img/logo.jpeg" alt="Logo e,c,m delineantes" id="logo" class="">
                 <h1>ECM DELINEANTES</h1>
             </a>
         </div>
-        
+
     </header>
-   
+
     <div class="container pt-5">
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item shadow">
-            <h2 class="accordion-header text-center" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Render:
-                </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                    <div>
-                        <p><b>Interior</b></p>
-                        <form id="formulario1">
-                            <label for="">Modelado</label>
-                            <input type="text" id="interior">
-                            <button type="button" class="btn btn-info" id="btnCalcular_interior">Calcular</button>
-                            <label for="">Total:</label>
-                            <input type="text" id="resultado_interior">
+                <h2 class="accordion-header text-center" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Render:
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div>
+                            <p><b>Interior</b></p>
+                            <form id="formulario1">
+                                <label for="">Modelado</label><br class="salto">
+                                <input type="text" id="interior">
+                                <button type="button" class="btn btn-info btn-sm mb-1"
+                                    id="btnCalcular_interior">Calcular</button><br class="salto">
+                                <label for="">subTotal:</label><br class="salto">
+                                <input type="text" id="resultado_interior">
+                                <br>
+                                <label for="">Cant. render</label><br class="salto">
+                                <input type="text" id="renderInterior">
+                                <button type="button" class="btn btn-info btn-sm mb-1"
+                                    id="btnCalcular_renderInterior">Calcular</button><br class="salto">
+                                <label for="">subTotal:</label><br class="salto">
+                                <input type="text" id="resultado_render_interior"> <br>
+                                <label class="label_render" for="">Total:</label><br class="salto">
+                                <input type="text" id="totalInterior">
+                            </form>
+                        </div>
+                        <p><b>Exterior</b> </p>
+                        <form id="formulario2">
+                            <label for="">Modelado</label><br class="salto">
+                            <input type="text" id="exterior">
+                            <button type="button" class="btn btn-info btn-sm mb-1"
+                                id="btnCalcular_exterior">Calcular</button><br class="salto">
+                            <label for="">subTotal:</label><br class="salto">
+                            <input type="text" id="resultado_exterior">
                             <br>
+                            <label for="">Cant. render</label><br class="salto">
+                            <input type="text" id="renderExterior">
+                            <button type="button" class="btn btn-info btn-sm mb-1"
+                                id="btnCalcular_renderExterior">Calcular</button><br class="salto">
+                            <label for="">subTotal:</label><br class="salto">
+                            <input type="text" id="resultado_render_Exterior"> <br>
+                            <label class="label_render" for="">Total:</label><br class="salto">
+                            <input type="text" id="totalExterior">
                         </form>
-                    </div>
-                    <p><b>Exterior</b> </p>
-                    <form id="formulario2">
-                        <label for="">Modelado</label>
-                        <input type="text" id="exterior">
-                        <button type="button" class="btn btn-info" id="btnCalcular_exterior">Calcular</button>
-                        <label for="">Total:</label>
-                        <input type="text" id="resultado_exterior">
-                        <br>
-                    </form>
-                    <p><b>Extras</b></p>
-                    <form id="formulario3">
-                        <label for="">Muebles</label>
-                        <input type="text" id="extras">
-                        <button type="button" class="btn btn-info" id="btnCalcular_extras">Calcular</button>
-                        <label for="">Total:</label>
-                        <input type="text" id="resultado_extras">
-                        <br>
-                    </form>
-                    <p><b>Cambios</b></p>
-                    <form id="formulario4">
-                        <label for="">Modelado</label>
-                        <input type="text" id="cambios">
-                        <button type="button" class="btn btn-info" id="btnCalcular_cambios">Calcular</button>
-                        <label for="">Total:</label>
-                        <input type="text" id="resultado_cambios">
-                        <br>
-                    </form>
+                        <p><b>Extras</b></p>
+                        <form id="formulario3">
+                            <label for="">Muebles</label><br class="salto">
+                            <input type="text" id="extras">
+                            <button type="button" class="btn btn-info btn-sm mb-1"
+                                id="btnCalcular_extras">Calcular</button><br class="salto">
+                            <label for="">subTotal:</label><br class="salto">
+                            <input type="text" id="resultado_extras">
+                            <br>
+                            <label for="">Minutos de video:</label><br class="salto">
+                            <input type="text" id="renderExtras">
+                            <button type="button" class="btn btn-info btn-sm mb-1"
+                                id="btnCalcular_renderExtras">Calcular</button><br class="salto">
+                            <label for="">subTotal:</label><br class="salto">
+                            <input type="text" id="resultado_render_Extras"> <br>
+                            <label class="label_render" for="">Total:</label><br class="salto">
+                            <input type="text" id="totalExtras">
+                        </form>
+                        <p><b>Cambios</b></p>
+                        <form id="formulario4">
+                            <label for="">Modelado</label><br class="salto">
+                            <input type="text" id="cambios">
+                            <button type="button" class="btn btn-info btn-sm mb-1"
+                                id="btnCalcular_cambios">Calcular</button><br class="salto">
+                            <label for="">subTotal:</label><br class="salto">
+                            <input type="text" id="resultado_cambios">
+                            <br>
+                            <label for="">Cant. render</label><br class="salto">
+                            <input type="text" id="renderCambios">
+                            <button type="button" class="btn btn-info btn-sm mb-1"
+                                id="btnCalcular_renderCambios">Calcular</button><br class="salto">
+                            <label for="">subTotal:</label><br class="salto">
+                            <input type="text" id="resultado_render_Cambios"> <br>
+                            <label class="label_render" for="">Total:</label><br class="salto">
+                            <input type="text" id="totalCambios">
+                        </form>
 
+                    </div>
                 </div>
             </div>
-            </div>
-            
+
         </div>
     </div>
 
 
 
-    <button class="d-grid gap-2 col-6 mx-auto btn btn-info"  id="btn-subtotalRender">Calcular Total</button>
+    <button class="d-grid gap-2 col-6 mx-auto btn btn-info" id="btn-subtotalRender">Calcular Total</button>
     <h2 class="mx-auto pt-4" style="width: 200px" id="subtotalRender"></h2>
-    
+
     <footer class="container-fluid bg-dark">
         <div>
             2021
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
     <script src="../../js/index.js"></script>
 </body>
+
 </html>

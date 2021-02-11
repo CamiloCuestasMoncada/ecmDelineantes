@@ -1,138 +1,168 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #2C3E50;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    ;
+body {
+    margin          : 0;
+    padding         : 0;
+    background-color: #2C3E50;
+    /* fallback for old browsers */
+    background      : -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background      : linear-gradient(to right, #4CA1AF, #2C3E50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
-#logo{
+#logo {
     width: 150px;
 }
 
-#btnInicio{
-    text-align: center;
+#btnInicio {
+    text-align     : center;
     text-decoration: none;
 }
 
-header{
+header {
     background-image: url(../img/pattern.jpg);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-h1{
-    color: #365c6d;;
+h1 {
+    color: #365c6d;
+    ;
 }
 
 footer {
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height:30px;
-    width:100%;
-    
- }
+    position: fixed;
+    left    : 0px;
+    bottom  : 0px;
+    height  : 30px;
+    width   : 100%;
 
-#title-web{
-    position: relative;
-    color: white;
 }
 
-#title-arq{
+#title-web {
     position: relative;
-    color: white;
+    color   : white;
 }
 
-.btn-info{
+#title-arq {
+    position: relative;
+    color   : white;
+}
+
+/*.btn-info{
     background-color: #22a4bd;
     
     width: 47vw;
     height: 14vh;
-}
+}*/
 
-#btnPlanos{
+#btnPlanos {
     background-color: #22a4bd;
+    width           : 47vw;
+    height          : 14vh;
 }
+
 #btnPlanos:hover {
-    
-    background-color: #0dcaf0;;
-    
-  }
 
-  #btnCalcular {
-      width: 90px;
-      height: 40px;
-  }
+    background-color: #0dcaf0;
+    ;
 
-  #btnCalcular_pliego{
-      width: 90px;
-      height: 40px;
-  }
-
-  #btnCalcular_medioPliego{
-      width: 90px;
-      height: 40px;
-  }
-
-  #btnCalcular_cuarto{
-      width: 90px;
-      height: 40px;
-  }
-
-  #btnCalcular_carta{
-      width: 90px;
-      height: 40px;
-  }
-
-  #btnCalcular_area{
-    width: 90px;
-    height: 40px;
 }
 
-#btnCalcular_detalle{
-    width: 90px;
-    height: 40px;
-}
 
-#btn-subtotal{
+
+#btn-subtotal {
     /*width: 90px;*/
     height: 40px;
-    
+
 }
 
-#subtotalPlanos{
+#subtotalPlanos {
     padding-bottom: 70px;
 }
 
-#btnCalcular_levantamiento{
-    width: 90px;
-    height: 40px;
+#subtotalRender {
+    padding-bottom: 70px;
 }
-#btnCalcular_interior{
-    width: 90px;
+
+
+#btn-subtotalRender {
+
     height: 40px;
 }
 
-#btnCalcular_exterior{
-    width: 90px;
-    height: 40px;
+.salto {
+    display: none;
 }
 
-#btnCalcular_extras{
-    width: 90px;
-    height: 40px;
+.label_render {
+    color: rgb(243, 249, 175);
 }
 
-#btnCalcular_cambios{
-    width: 90px;
-    height: 40px;
+#interior,
+#exterior,
+#cambios {
+    margin-left: 14px;
 }
 
-#btn-subtotalRender{
-   
-    height: 40px;
+#extras {
+    margin-left: 66px;
 }
+
+#totalInterior,
+#totalExterior,
+#totalCambios {
+    margin-left: 50px;
+}
+
+#totalExtras {
+    margin-left: 90px;
+}
+
+.resultadosCheck {
+    display: inline;
+    color  : rgb(243, 249, 175);
+}
+
+@media(max-width: 768px) {
+    #logo {
+        width: 100px;
+    }
+
+    .salto {
+        display: block;
+    }
+
+    #interior,
+    #exterior,
+    #cambios {
+        margin-left: 0px;
+    }
+
+    #extras,
+    #totalCambios {
+        margin-left: 0px;
+    }
+
+    #totalInterior,
+    #totalExterior {
+        margin-left: 0px;
+    }
+
+    #totalExtras {
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 200px) {
+    body {
+        min-width: 200px;
+        overflow : hidden;
+    }
+}
+
+
+
